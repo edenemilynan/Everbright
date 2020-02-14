@@ -7771,11 +7771,11 @@ Game_Player.prototype.updateNonmoving = function(wasMoving) {
 };
 
 Game_Player.prototype.triggerAction = function() {
-    if (this.canMove()) {
+    if (this.canMove() || $gameTemp.isStopMapPlayerMovement()) {
         if (this.triggerButtonAction()) {
             return true;
         }
-        if (this.triggerTouchAction()) {
+        if (this.triggerTouchAction() && !$gameTemp.isStopMapPlayerMovement()) {
             return true;
         }
     }
