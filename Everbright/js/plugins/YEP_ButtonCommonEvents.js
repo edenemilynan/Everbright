@@ -891,7 +891,7 @@ Input._revertButton = function(button) {
     this.keyMapper[81] = 'pageup';
   } else if (button === 'PAGEDOWN') {
     this.keyMapper[34] = 'pagedown';
-    this.keyMapper[87] = 'pagedown';
+    // this.keyMapper[87] = 'pagedown';
   } else if (button === 'LEFT') {
     this.keyMapper[37] = 'left';
     this.keyMapper[100] = 'left';
@@ -915,7 +915,7 @@ Input._revertButton = function(button) {
     this.keyMapper[33] = 'pageup';
     this.keyMapper[81] = 'pageup';
     this.keyMapper[34] = 'pagedown';
-    this.keyMapper[87] = 'pagedown';
+    //this.keyMapper[87] = 'pagedown';
     this.keyMapper[37] = 'left';
     this.keyMapper[100] = 'left';
     this.keyMapper[38] = 'up';
