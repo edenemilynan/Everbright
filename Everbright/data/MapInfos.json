@@ -5,5 +5,6 @@ null,
 {"id":3,"expanded":true,"name":"EMP Device","order":3,"parentId":0,"scrollX":759,"scrollY":505.5},
 {"id":4,"expanded":true,"name":"Interactables","order":4,"parentId":0,"scrollX":566.5,"scrollY":394.5},
 {"id":5,"expanded":true,"name":"EL Test Map","order":5,"parentId":4,"scrollX":759,"scrollY":497.5},
-{"id":6,"expanded":false,"name":"Inside Test","order":6,"parentId":5,"scrollX":759,"scrollY":505.5}
+{"id":6,"expanded":false,"name":"Inside Test","order":6,"parentId":5,"scrollX":759,"scrollY":505.5},
+{"id":7,"expanded":false,"name":"VS1 - STREET LEVEL 2","order":7,"parentId":0,"scrollX":878.6666666666666,"scrollY":474}
 ]
