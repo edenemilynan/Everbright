@@ -7,5 +7,5 @@ null,
 {"id":5,"expanded":true,"name":"EL Test Map","order":5,"parentId":4,"scrollX":868,"scrollY":464},
 {"id":6,"expanded":false,"name":"Inside Test","order":6,"parentId":5,"scrollX":759,"scrollY":505.5},
 {"id":7,"expanded":true,"name":"VS1 - STREET LEVEL 2","order":7,"parentId":0,"scrollX":868,"scrollY":378.6666666666667},
-{"id":8,"expanded":false,"name":"VS2, streetLevel1","order":8,"parentId":7,"scrollX":612,"scrollY":378.6666666666667}
+{"id":8,"expanded":false,"name":"VS2, streetLevel1","order":8,"parentId":7,"scrollX":3666,"scrollY":486.6666666666667}
 ]
