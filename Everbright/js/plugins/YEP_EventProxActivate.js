@@ -157,6 +157,14 @@ Game_Player.prototype.meetPlayerProximityConditions = function(ev) {
     var y2 = ev.y;
     var radius = $gameMap.distance(x1, y1, x2, y2);
     return ev._activationDist >= radius
+  } else if (ev._activationType === 'squareES') {
+      var dx = ev.deltaXFrom(this.x);
+      var dy = ev.deltaYFrom(this.y);
+      console.log(ev._realX - this._realX);
+      if ((dx > 0 && ev._direction == 4) || (dx < 0 && ev._direction == 6)) {
+        return ev._activationDist >= Math.abs(dx) && Math.abs(ev._realY - this._realY) < 1.2;
+      } 
+      return Math.abs(ev._realX - this._realX) <= 0.4 && dy == 0;
   } else if (ev._activationType === 'square') {
     return ev._activationDist >= Math.abs(ev.deltaXFrom(this.x)) &&
            ev._activationDist >= Math.abs(ev.deltaYFrom(this.y));
@@ -194,6 +202,7 @@ Game_Event.prototype.initEventProximitySettings = function() {
 Game_Event.prototype.setupEventProximityCommentTags = function() {
   if (!this.page()) return;
   var note1 = /<ACTIVATION SQUARE: (\d+)>/i;
+  var note0 = /<ACTIVATION SQUAREES: (\d+)>/i;
   var note2 = /<ACTIVATION (?:RADIUS|PROXIMITY): (\d+)>/i;
   var note3 = /<ACTIVATION (?:ROW|X|HORIZONTAL): (\d+)>/i;
   var note4 = /<ACTIVATION (?:COLUMN|Y|VERTICAL): (\d+)>/i;
@@ -214,6 +223,9 @@ Game_Event.prototype.setupEventProximityCommentTags = function() {
       } else if (ev.parameters[0].match(note4)) {
         this._activationDist = parseInt(RegExp.$1);
         this._activationType = 'column';
+      } else if (ev.parameters[0].match(note0)) {
+        this._activationDist = parseInt(RegExp.$1);
+        this._activationType = 'squareES';
       }
     }
   }
