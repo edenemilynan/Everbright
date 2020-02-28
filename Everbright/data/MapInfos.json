@@ -9,6 +9,6 @@ null,
 {"id":7,"expanded":true,"name":"VS1 - STREET LEVEL 2","order":7,"parentId":0,"scrollX":790.8,"scrollY":426.59999999999997},
 {"id":8,"expanded":false,"name":"VS2, streetLevel1","order":8,"parentId":7,"scrollX":790.8,"scrollY":426.59999999999997},
 {"id":9,"expanded":true,"name":"Apartment Level","order":9,"parentId":0,"scrollX":790.8,"scrollY":436.2},
-{"id":10,"expanded":false,"name":"VS2, streetLevel1, textured","order":10,"parentId":9,"scrollX":790.8,"scrollY":426.59999999999997},
-{"id":11,"expanded":true,"name":"VS2, streetLevel2","order":11,"parentId":0,"scrollX":790.8,"scrollY":426.59999999999997}
+{"id":10,"expanded":false,"name":"VS2, streetLevel1, textured","order":10,"parentId":9,"scrollX":4052.3999999999996,"scrollY":426.59999999999997},
+{"id":11,"expanded":true,"name":"VS2, streetLevel2","order":11,"parentId":0,"scrollX":4489.2,"scrollY":426.59999999999997}
 ]
