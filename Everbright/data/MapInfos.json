@@ -2,7 +2,7 @@
 null,
 {"id":1,"expanded":false,"name":"STREET LEVEL 2","order":1,"parentId":0,"scrollX":542,"scrollY":325},
 {"id":2,"expanded":false,"name":"Hiding spot","order":2,"parentId":0,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
-{"id":3,"expanded":true,"name":"EMP Device","order":3,"parentId":0,"scrollX":759,"scrollY":505.5},
+{"id":3,"expanded":true,"name":"EMP Device","order":3,"parentId":0,"scrollX":540.6666666666666,"scrollY":322},
 {"id":4,"expanded":true,"name":"Interactables","order":4,"parentId":0,"scrollX":566.5,"scrollY":394.5},
 {"id":5,"expanded":true,"name":"EL Test Map","order":5,"parentId":4,"scrollX":868,"scrollY":464},
 {"id":6,"expanded":false,"name":"Inside Test","order":6,"parentId":5,"scrollX":758.6666666666666,"scrollY":506},

@@ -8917,7 +8917,7 @@ Game_Interpreter.prototype.wait = function(duration) {
 };
 
 Game_Interpreter.prototype.fadeSpeed = function() {
-    return 24;
+    return 84;
 };
 
 Game_Interpreter.prototype.executeCommand = function() {
