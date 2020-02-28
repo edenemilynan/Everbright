@@ -7,7 +7,7 @@ null,
 {"id":5,"expanded":true,"name":"EL Test Map","order":5,"parentId":4,"scrollX":868,"scrollY":464},
 {"id":6,"expanded":false,"name":"Inside Test","order":6,"parentId":5,"scrollX":758.6666666666666,"scrollY":506},
 {"id":7,"expanded":true,"name":"VS1 - STREET LEVEL 2","order":7,"parentId":0,"scrollX":722.6666666666666,"scrollY":382},
-{"id":8,"expanded":false,"name":"VS2, streetLevel1","order":8,"parentId":7,"scrollX":832,"scrollY":382},
-{"id":9,"expanded":true,"name":"Apartment Level","order":9,"parentId":0,"scrollX":722.6666666666666,"scrollY":392.6666666666667},
+{"id":8,"expanded":false,"name":"VS2, streetLevel1","order":8,"parentId":7,"scrollX":878.6666666666666,"scrollY":474},
+{"id":9,"expanded":true,"name":"Apartment Level","order":9,"parentId":0,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
 {"id":10,"expanded":false,"name":"VS2, streetLevel1, textured","order":10,"parentId":9,"scrollX":2144,"scrollY":382}
 ]
