@@ -263,7 +263,7 @@ if (Imported["OrangeHudGauge"] === undefined) {
   };
 
   OrangeHudGauge.getMaxValue = function(variableData) {
-	return 10;
+	return 8;
     if (variableData.ScriptMaxValue !== undefined) {
       if (typeof(variableData.ScriptMaxValue) == "function") {
         return parseFloat(variableData.ScriptMaxValue());
