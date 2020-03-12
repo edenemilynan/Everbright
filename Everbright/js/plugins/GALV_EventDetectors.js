@@ -283,6 +283,13 @@ Galv.DETECT.event = function(id,dist,los) {
 };
 
 Galv.DETECT.dist = function(x1,y1,x2,y2) {
+	return Math.abs(x1-x2);
+	return Math.sqrt(Math.pow(x1 - x2,2) + Math.pow(y1 - y2,2));
+};
+
+Galv.DETECT.sameYLevel = function(y1,y2) {
+	var dist = Math.abs(y1-y2);
+	return dist < 48;
 	return Math.sqrt(Math.pow(x1 - x2,2) + Math.pow(y1 - y2,2));
 };
 
@@ -391,7 +398,7 @@ Game_Character.prototype.distDetect = function(range,los,id,balloon) {
 	
 	var dist = Galv.DETECT.dist(x1,y1,x2,y2);
 
-	if (dist <= range) { // If in radius range of target
+	if (dist <= range && Galv.DETECT.sameYLevel(y1,y2)) { // If in radius range of target
 		if ((los && Galv.DETECT.los(target,this)) || !los) {  // If LOS to target is not blocked
 			this._dTarget = {x:target.x,y:target.y};  // Set target x,y each step when detected so if los is broken, event still moves to last seen x,y
 			this.doDetected(id);
