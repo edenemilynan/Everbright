@@ -10,13 +10,13 @@ null,
 {"id":8,"expanded":false,"name":"VS2, streetLevel1","order":8,"parentId":7,"scrollX":2011.1999999999998,"scrollY":341.4},
 {"id":9,"expanded":true,"name":"Apartment Level","order":9,"parentId":0,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
 {"id":10,"expanded":false,"name":"VS2, streetLevel1, textured","order":10,"parentId":9,"scrollX":5793.333333333333,"scrollY":474},
-{"id":11,"expanded":true,"name":"VS2, streetLevel2","order":11,"parentId":0,"scrollX":878.6666666666666,"scrollY":474},
-{"id":12,"expanded":false,"name":"different detection plugin","order":13,"parentId":0,"scrollX":650.4,"scrollY":351},
+{"id":11,"expanded":true,"name":"VS2, streetLevel2","order":11,"parentId":0,"scrollX":3648,"scrollY":474},
+{"id":12,"expanded":false,"name":"different detection plugin","order":13,"parentId":0,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
 {"id":13,"expanded":false,"name":"Puzzle Tests (jaymie)","order":14,"parentId":0,"scrollX":1749.6,"scrollY":341.4},
 {"id":14,"expanded":true,"name":"More Puzzle Tests (jaymie)","order":15,"parentId":0,"scrollX":650.4,"scrollY":351},
 {"id":15,"expanded":true,"name":"puzzle puzzle","order":16,"parentId":14,"scrollX":650.4,"scrollY":351},
 {"id":16,"expanded":false,"name":"puzzle puzzle puzzle","order":17,"parentId":14,"scrollX":650.4,"scrollY":351},
-{"id":17,"expanded":true,"name":"churchLevelOne","order":18,"parentId":0,"scrollX":650.4,"scrollY":351},
+{"id":17,"expanded":true,"name":"churchLevelOne","order":18,"parentId":0,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
 {"id":18,"expanded":false,"name":"Church floor 2","order":12,"parentId":11,"scrollX":878.6666666666666,"scrollY":474},
-{"id":19,"expanded":false,"name":"churchFront","order":19,"parentId":17,"scrollX":832,"scrollY":640}
+{"id":19,"expanded":false,"name":"churchFront","order":19,"parentId":17,"scrollX":878.6666666666666,"scrollY":484.6666666666667}
 ]
