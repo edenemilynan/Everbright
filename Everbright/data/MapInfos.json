@@ -17,7 +17,7 @@ null,
 {"id":15,"expanded":true,"name":"puzzle puzzle","order":17,"parentId":14,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
 {"id":16,"expanded":false,"name":"puzzle puzzle puzzle","order":18,"parentId":14,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
 {"id":17,"expanded":true,"name":"churchLevelOne","order":19,"parentId":0,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
-{"id":18,"expanded":false,"name":"Church floor 2","order":12,"parentId":11,"scrollX":3681.3333333333335,"scrollY":474},
+{"id":18,"expanded":false,"name":"Church floor 2","order":12,"parentId":11,"scrollX":2136,"scrollY":474},
 {"id":19,"expanded":false,"name":"churchFront","order":20,"parentId":17,"scrollX":878.6666666666666,"scrollY":484.6666666666667},
 {"id":20,"expanded":false,"name":"Church Final","order":15,"parentId":13,"scrollX":878.6666666666666,"scrollY":484.6666666666667}
 ]
