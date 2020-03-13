@@ -16,5 +16,6 @@ null,
 {"id":14,"expanded":true,"name":"More Puzzle Tests (jaymie)","order":14,"parentId":0,"scrollX":650.4,"scrollY":351},
 {"id":15,"expanded":true,"name":"puzzle puzzle","order":15,"parentId":14,"scrollX":650.4,"scrollY":351},
 {"id":16,"expanded":false,"name":"puzzle puzzle puzzle","order":16,"parentId":14,"scrollX":650.4,"scrollY":351},
-{"id":17,"expanded":false,"name":"churchLevelOne","order":17,"parentId":0,"scrollX":650.4,"scrollY":351}
+{"id":17,"expanded":false,"name":"churchLevelOne","order":17,"parentId":0,"scrollX":650.4,"scrollY":351},
+{"id":18,"expanded":false,"name":"Church floor 2","order":12,"parentId":11,"scrollX":591.2727272727273,"scrollY":398.72727272727275}
 ]
