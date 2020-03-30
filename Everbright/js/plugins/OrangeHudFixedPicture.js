@@ -1,15 +1,95 @@
+/*=============================================================================
+ * Orange - Fixed Picture HUD
+ * By HUDell - www.hudell.com
+ * OrangeHudFixedPicture.js
+ * Version: 1.6
+ * Free for commercial and non commercial use.
+ *=============================================================================*/
+/*:
+ * @plugindesc Adds a new Fixed Picture to Orange Hud
+ * @author Hudell
+ *
+ * @param GroupName
+ * @desc The name of the HUD group where this line should be displayed
+ * @default main
+ *
+ * @param FileName
+ * @desc The picture filename that will be drawn
+ * @default 
+ *
+ * @param SwitchId
+ * @desc Set this to a switch number to use it to control the visibility of this picture
+ * @default 0
+ *
+ * @param X
+ * @desc The X position of the picture inside the HUD
+ * @default 
+ *
+ * @param Y
+ * @desc The Y position of the picture inside the HUD
+ * @default 
+ *
+ * @help
+ * ============================================================================
+ * Latest Version
+ * ============================================================================
+ * 
+ * Get the latest version of this script on
+ * http://link.hudell.com/hud-line-picture
+ * */
 
-<html>
-<head>
-  <title>OpenID transaction in progress</title>
-</head>
-<body onload="document.forms[0].submit();">
-<form id="openid_message" action="https://id.atlassian.com/openid/v2/op" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded"><input name="openid.ns.crowdid" type="hidden" value="https://developer.atlassian.com/display/CROWDDEV/CrowdID+OpenID+extensions#CrowdIDOpenIDextensions-login-page-parameters"/><input name="openid.return_to" type="hidden" value="https://bitbucket.org/socialauth/complete/atlassianid/?janrain_nonce=2020-03-30T00%3A21%3A04ZAB3Tn4"/><input name="openid.realm" type="hidden" value="https://bitbucket.org"/><input name="openid.ns" type="hidden" value="http://specs.openid.net/auth/2.0"/><input name="openid.sreg.optional" type="hidden" value="fullname,nickname,email"/><input name="openid.claimed_id" type="hidden" value="http://specs.openid.net/auth/2.0/identifier_select"/><input name="openid.ns.sreg" type="hidden" value="http://openid.net/extensions/sreg/1.1"/><input name="openid.crowdid.application" type="hidden" value="bitbucket"/><input name="openid.assoc_handle" type="hidden" value="25822043"/><input name="openid.mode" type="hidden" value="checkid_setup"/><input name="openid.identity" type="hidden" value="http://specs.openid.net/auth/2.0/identifier_select"/><input type="submit" value="Continue"/></form>
-<script>
-var elements = document.forms[0].elements;
-for (var i = 0; i < elements.length; i++) {
-  elements[i].style.display = "none";
+var Imported = Imported || {};
+
+if (Imported["OrangeHud"] === undefined) {
+  throw new Error("Please add OrangeHud before OrangeHudFixedPicture!");
 }
-</script>
-</body>
-</html>
+if (Imported["OrangeHud"] < 1.7) {
+  throw new Error("Please update OrangeHud!");
+}
+
+var OrangeHudFixedPicture = OrangeHudFixedPicture || {};
+
+if (Imported["OrangeHudFixedPicture"] === undefined) {
+  OrangeHudFixedPicture.validateParams = function(line) {
+    line.GroupName = line.GroupName || "main";
+    
+    if (line.FileName === undefined) {
+      line.FileName = "";
+    } else if (line.FileName.trim() === "") {
+      line.FileName = "";
+    }
+
+    line.X = Number(line.X || 0);
+    line.Y = Number(line.Y || 0);
+
+    line.SwitchId = Number(line.SwitchId || 0);
+  };
+
+  OrangeHudFixedPicture.drawLine = function(window, variableData) {
+    if (variableData.SwitchId > 0) {
+      if (!$gameSwitches.value(variableData.SwitchId)) {
+        return;
+      }
+    }
+
+    if (variableData.FileName !== "") {
+      var bitmap = ImageManager.loadPicture(variableData.FileName);
+      bitmap.addLoadListener(function(){
+        OrangeHud.setDirty();
+      });
+
+      window.drawPicture(variableData.FileName, variableData.X, variableData.Y);
+    }
+  };
+
+  OrangeHudFixedPicture.getValue = function(variableData) {
+    return 0;
+  };
+  
+  OrangeHudFixedPicture.getKey = function(variableData) {
+    return 'fixed-picture';
+  };
+
+  OrangeHud.registerLineType('OrangeHudFixedPicture', OrangeHudFixedPicture);
+  Imported["OrangeHudFixedPicture"] = 1.6;
+}
