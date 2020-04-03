@@ -391,7 +391,7 @@ Window_Base.prototype.makeFontBigger = function() {
 
 Window_Base.prototype.makeFontSmaller = function() {
     if (this.contents.fontSize >= 24) {
-        this.contents.fontSize -= 12;
+        this.contents.fontSize -= 6;
     }
 };
 
