@@ -6577,7 +6577,13 @@ Game_CharacterBase.prototype.animationWait = function() {
 Game_CharacterBase.prototype.updateAnimationCount = function() {
     if (this.isMoving() && this.hasWalkAnime()) {
         this._animationCount += 1.5;
-    } else if (this.hasStepAnime() || !this.isOriginalPattern()) {
+    } else if ($gameTemp.isStopMapEventMovement()) {
+        var event = $gameMap.event(this._eventId);
+        if (event && event.event() && event.event().name !== "NUMBER" ) {
+            return;
+        }
+    } 
+    if (  this.hasStepAnime() || !this.isOriginalPattern()) {
         this._animationCount++;
     }
 };
