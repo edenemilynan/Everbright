@@ -1,14 +1,16 @@
 Everbright
 Renegade Femme Fatale Studios
-Courtenay, Eden, Erin, Jaymie, Tamara
+Courtenay, Eden, Erin, Jaymie, Nikita, Tamara, Hope (EP)
 
 Instructions:
 
-Interact buttons, ‘j’, ‘enter’, ‘space’
+Interact buttons: ENTER or SPACE
 
-Move with WASD or directional arrows.
-Bring up Obscurer menu with ‘k’ or ‘z’, cycle through options with WASD or directional arrows, make selection with interact button.
-Interact with coloured objects using interact button.
+Move with: WASD or directional arrows
+
+Obscurer menu: bring up with ‘k’ or ‘z’, select light with associated hotkey (1, 2, 3…), close menu with ‘k’ or ‘z’
+
+Interact with coloured objects using interact button
 
 Mechanics:
 
