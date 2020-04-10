@@ -3,7 +3,8 @@ Renegade Femme Fatale Studios
 Courtenay, Eden, Erin, Jaymie, Nikita, Tamara, Hope (EP)
 
 Instructions to Start:
-Click on the Windows or Mac folder, depending on your system and double click Game.exe or Game.app.
+Unzip the file. Click on the Windows or Mac folder, depending on your system and
+double click Game.exe or Game.app.
 
 Instructions to Play:
 
