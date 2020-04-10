@@ -3,6 +3,7 @@ Renegade Femme Fatale Studios
 Courtenay, Eden, Erin, Jaymie, Nikita, Tamara, Hope (EP)
 
 Instructions to Start:
+
 Unzip the file. Click on the Windows or Mac folder, depending on your system and
 double click Game.exe or Game.app.
 
@@ -21,3 +22,8 @@ Mechanics:
 
 Avoid visible enemy line of sight, use ladders, hiding spots (enter with interact button) and Obscurer to 
 create paths around enemies.
+
+Note Regarding Mac OS X Version:
+
+Our autosave function does not work reliably in the Mac OS X version of the game. 
+You can open a menu to save manually with ESC. Manual saves are disabled during puzzles.
