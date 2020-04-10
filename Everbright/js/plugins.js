@@ -24,6 +24,6 @@ var $plugins =
 {"name":"GALV_PuzzleFunctions","status":true,"description":"(v.1.1) A bunch of functions to use to make eventing puzzles easier","parameters":{}},
 {"name":"YEP_MoveRouteCore","status":true,"description":"v1.04 Expand the number of movement options for the move\nroute events using this plugin.","parameters":{}},
 {"name":"QPlus","status":true,"description":"<QPlus> (Should go above all Q Plugins)\nSome small changes to MV for easier plugin development.","parameters":{"Quick Test":"true","Default Enabled Switches":"[]","Ignore Mouse when inactive":"false"}},
-{"name":"QAudio","status":true,"description":"<QAudio>\nFew new audio features","parameters":{"Default Radius":"5","Default Max Volume":"15"}},
+{"name":"QAudio","status":true,"description":"<QAudio>\nFew new audio features","parameters":{"Default Radius":"4","Default Max Volume":"10"}},
 {"name":"GALV_MessageStyles","status":true,"description":"(v.2.8) Settings to change how your \"Show Text\" messages look as well as code to make them floating.","parameters":{"Input Indicator":"2,0,-12","Indicator Zoom":"100","Message Padding":"0,0,0,0","Message Windowskin":"Window","Other Windowskins":"","Arrow Graphic":"","Other Arrow Graphics":"","Windowskin Back Opacity":"192","Y Offset":"60","Font":"","Font Filename":"","Font Outline":"true","Font Size":"28"}}
 ];
